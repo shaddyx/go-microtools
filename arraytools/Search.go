@@ -7,7 +7,6 @@ import "reflect"
 //
 func Find(s interface{}, elem interface{}) int {
 	arrV := reflect.ValueOf(s)
-
 	if arrV.Kind() == reflect.Slice {
 		for i := 0; i < arrV.Len(); i++ {
 
