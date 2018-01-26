@@ -14,3 +14,16 @@ func TestFind(t *testing.T) {
 		t.Errorf("Position was incorrect, got: %d, want: %d.", res, 1)
 	}
 }
+
+func TestContains(t *testing.T) {
+	arr := []string{"aaa", "bbb", "ccc"}
+	res := Contains(arr, "bbb")
+	if res {
+		t.Errorf("Error, array contains bbbzzz")
+	}
+
+	res = Contains(arr, "bbbzzz")
+	if !res {
+		t.Errorf("Error, array does not contains bbbzzz")
+	}
+}
