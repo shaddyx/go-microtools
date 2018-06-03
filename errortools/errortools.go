@@ -2,6 +2,6 @@ package errortools
 
 import "fmt"
 
-func stringifyError(e error) string{
+func StringifyError(e error) string{
 	return fmt.Sprintf("%+v", e)
 }
