@@ -24,3 +24,4 @@ func Find(s interface{}, elem interface{}) int {
 func Contains(s interface{}, elem interface{}) bool {
 	return Find(s, elem) != -1
 }
+
